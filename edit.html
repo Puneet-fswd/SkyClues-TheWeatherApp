@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="16x16" href="logo.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="logo.jpg">
+        <link rel="stylesheet" href="styles.css">
+        <title>SkyClues - The Weather App</title>
+    </head>
+    <body>
+        <div class="bigContainer">
+            <div class="container-1">
+                <!-- searchbar -->
+                <div class="searchBar">
+                    <form>
+                        <input type="search" placeholder="Search cities here for its weather" aria-label="Search" id="city">
+                        <img src="searchicon.png" id="search" class="search"> 
+                    </form>
+                </div>
+                <div class="common">
+                    <h1>weather of some common places</h1>
+                </div>
+
+                <!-- common cities weather cards -->
+                <div class="weatherCards">
+                    <div class="popCities" id="city-1">
+                        <div class="popflex">
+                            <a><span id="temp_1"></span><img src="celcius.png" id="celcius-1"></a>
+                            <a id="popCity_1">Mumbai</a>
+                        </div>
+                    </div>
+                    <div class="popCities" id="city-2">
+                        <div class="popflex">
+                            <span id="temp_2"></span><img src="celcius.png" id="celcius">
+                            <a id="popCity_1">New Delhi</a>
+                        </div>
+                    </div>
+                    <div class="popCities" id="city-3">
+                        <div class="popflex">
+                            <span id="temp_3"></span><img src="celcius.png" id="celcius">
+                            <a id="popCity_1">Moscow</a>
+                        </div>
+                    </div>
+                    <div class="popCities" id="city-4">
+                        <div class="popflex">
+                            <span id="temp_4"></span><img src="celcius.png" id="celcius">
+                            <a id="popCity_1">London</a>
+                        </div>
+                    </div>
+                    <div class="popCities" id="city-5">
+                        <div class="popflex">
+                            <span id="temp_5"></span><img src="celcius.png" id="celcius">
+                            <a id="popCity_1">Paris</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-2">
+                <div class="subcontainer-1">
+                    <!-- navbar -->
+                    <nav>
+                        <div class="navbar">
+                            <img src="logo.jpg">
+                            <a id="title">SkyClues</a>
+                            <a id="time"></a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="forbg">
+                    <div class="subcontainer-2">
+                        <!-- temperature of the searched city -->
+                        <div class="searchedCity">
+                            <div class="city">
+                                <a><span id="cityName"></span></a>
+                            </div>
+                            <hr>
+                            <div class="params">
+                                <h3> Temperature: <span id="searchedTemp"></span></h3>
+                                <h3> Max-Temperature: <span id="searchedMaxTemp"></span></h3>
+                                <h3> Min-Temperature: <span id="searchedMinTemp"></span></h3>
+                                <h3> Feels Like: <span id="feelsLike"></span></a>
+                                <h3> Humidity: <span id="humidity"></span></h3>
+                                <h3> Sunrise: <span id="sunrise"></span></h3>
+                                <h3> Sunset: <span id="sunset"></span></h3>
+                            </div>
+                        </div>
+                        <!-- <div class="displayLogos">
+                            <div class="displayLogo">
+                                <img src="6-12.jpg">
+                                <a>Morning</a>
+                            </div>
+                            <div class="displayLogo">
+                                <img src="12-5.jpg">
+                                <a>Afternoon</a>
+                            </div>
+                            <div class="displayLogo">
+                                <img src="6-12.jpg">
+                                <a>Evening</a>
+                            </div>
+                            <div class="displayLogo">
+                                <img src="12-6.png">
+                                <a>Night</a>
+                            </div>
+                        </div> -->
+                        <div class="about">
+                            <h2 class="aboutTitle">ABOUT</h2>
+                            <hr>
+                            <a>SkyClues - The Weather App is a website which provides real-time climatic conditions of a specific location searched location. The website is created using HTML, CSS and JavaScript. The data used is obtained from Rapid API client.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
